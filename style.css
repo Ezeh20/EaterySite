@@ -9,27 +9,33 @@
     font-family: 'Acme', sans-serif;
 
 }
-.section-heading{
-    font-size: 8rem;
+.section-heading-1{
+    font-size: 14rem;
+    color: #999;
+    margin-top: -10rem;
 }
 html{
     font-size: 65%;
 }
 /**end of common style**/
+/**section 1**/
 .section-1{
     width: 100%;
     height: 100vh;
+    background-color: #333;
     display: flex;
     justify-content: space-evenly;
-    flex-direction: column;
+    flex-direction:column;
     align-content: center;
     align-items: center;
 }
 .section-1-icons i{
-    font-size: 20rem;
+    font-size: 25rem;
     position: absolute;
     transform: translate(-50%, -50%) scale(0); 
+    color:rgba(255, 69, 2, 0.932);
 }
 .section-1-icons i.change{
     transform: translate(-50%, -50%) scale(1); 
 }
+/**end of section 1**/
