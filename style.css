@@ -22,6 +22,54 @@ html{
     font-size: 65%;
 }
 /**end of common style**/
+.nav-bar{
+    width: 100%;
+    height: 17rem;
+    position: fixed;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;    
+}
+.nav-item{
+    display: flex;
+    flex-direction: column;
+    margin: 5rem;
+    text-align: center;
+    align-content: center;
+}
+nav i.ic{
+    color: rgba(255, 69, 2, 0.932);
+    font-size: 5rem;
+}
+nav  span.nav-name{
+    font-weight: 700;
+    color: #777;
+    margin-top: 2rem;
+    font-size: 2rem;
+    letter-spacing: .2rem;
+    text-transform: capitalize;
+}
+.menu{
+    width: 3.5rem;
+    height: 5rem;
+    top: 20rem;
+    left: 5rem;
+    background-color: rgba(255, 69, 2, 0.932);
+    box-shadow: .2rem .2rem .2rem .2rem #000;
+    border-radius: 30rem 30rem 15rem 15rem;
+    position: fixed;
+}
+.menu::before{
+    content: "";
+    width: .3rem;
+    height: 20rem;
+    top: -20rem;
+    background-color: #000;
+    position: absolute;
+    left: calc(50% - .15rem);
+}
 /**section 1**/
 .section-1{
     width: 100%;
@@ -129,6 +177,7 @@ html{
 .food-img{
     width: 25vw;
     height: 15vw;
+    object-fit: cover;
     box-shadow: .3rem .3rem .1rem rgba(255, 69, 2, 0.932), 
     .5rem .5rem .1rem white,
     .6rem .6rem .1rem rgba(0, 0, 255, .8),
