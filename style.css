@@ -9,10 +9,14 @@
     font-family: 'Acme', sans-serif;
 
 }
-.section-heading-1{
-    font-size: 14rem;
+.section-heading{
+    font-size: 12rem;
+    font-weight: 900;
     color: #999;
-    margin-top: -10rem;
+    letter-spacing: .6rem;
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: .3rem .3rem .3rem #000;
 }
 html{
     font-size: 65%;
@@ -104,3 +108,95 @@ html{
     align-content: center;
 }
 /**end of section-2**/
+/**start of section 3**/
+.section-heading-3{
+    font-size: 14rem;
+    color: #888;
+    text-align: center;
+}
+.section-3{
+    padding: 5rem 0rem;
+    background-color: #111;
+    
+}
+.menu-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 1rem;
+    
+}
+.food-img{
+    width: 25vw;
+    height: 15vw;
+    
+
+}
+.menu-card{
+    position: relative;
+    margin: 4rem;
+    box-shadow: .3rem .3rem .1rem rgba(255, 69, 2, 0.932), 
+    .5rem .5rem .1rem white,
+    .6rem .6rem .1rem rgba(0, 0, 255, .8),
+    .8rem .8rem .1rem  rgba(255, 69, 2, 0.932);
+}
+.food-item{
+    position: absolute;
+    top:2rem;
+    left:2rem;
+    font-size: 3rem;
+    text-transform: capitalize;
+    color: #fff;
+    letter-spacing: .2rem;
+    overflow: hidden;
+    width: 0;
+    transition: width 1s;
+}
+.menu-card:hover .food-item{
+    width: 100%;
+    transition: width 2s ;
+}
+.food-des{
+    position: absolute;
+    bottom: 3vw;
+    font-size: 2rem;
+    left:2rem;
+    color: #fff;
+    width: 70%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s 0.2s;
+}
+.menu-card:hover .food-des{
+  visibility: visible;
+  opacity: 1;
+  transition: all 1s 0.2s;
+}
+.menu-card::before{
+    content: "";
+    width:0.2rem;
+    height: 0;
+    position: absolute;
+    background-color: white;
+    left: 80%;
+    top: 2vw;
+    transition: height 1s;
+}
+.menu-card:hover::before{
+  height: 80%;
+}
+.menu-card::after{
+    content: "";
+    width: 0;
+    height: 0.2rem;
+    position: absolute;
+    background-color: white;
+    left: 1vw;
+    top: 30%;
+    transition: width 1s;
+}
+.menu-card:hover::after{
+width: 90%;
+}
+
+/**end of section 3**/
