@@ -1,4 +1,6 @@
 const icons=document.querySelectorAll('.section-1-icons i')
+const menu=document.querySelector('.menu')
+const press=document.querySelectorAll('.target')
 
 let i=1
 
@@ -14,3 +16,10 @@ setInterval(()=>{
       icon.nextElementSibling.classList.add('change')
    }
 },1000)
+
+
+menu.addEventListener('click', ()=>{
+   press.forEach((target)=>{
+    target.classList.toggle('target')
+   })
+})
