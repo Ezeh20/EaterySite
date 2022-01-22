@@ -215,3 +215,62 @@ width: 90%;
 }
 
 /**end of section 3**/
+/** start of section 4**/
+.section-4{
+    width: 100%;
+    height: 30rem;
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    padding: 5rem  0rem;
+    align-items: flex-start;
+}
+.footer-name{
+ color:rgba(255, 69, 2, 0.932);
+ font-size: 4rem;
+text-transform: capitalize;
+letter-spacing: .2rem;
+}
+.footer-info{
+    font-size: 2rem;
+    color: #888;
+    text-transform: capitalize;
+    letter-spacing: .2rem;
+}
+.copy-right{
+    font-size: 2rem;
+    color: #888;
+    text-transform: capitalize;
+    letter-spacing: .2rem;
+    position: absolute;
+    bottom: 2rem;
+    justify-content: center;
+}
+.sign-up-email{
+    letter-spacing: .2rem;
+    width: 30rem;
+    height: 5rem;
+    padding: 1rem;
+    border: 1px  rgba(255, 69, 2, 0.932) solid;
+    
+}
+.sign-up-email::placeholder{
+    font-size: 2rem;
+    color: rgba(255, 69, 2, 0.932);
+}
+.footer-form{
+    display: flex;
+    align-items: center;
+}
+.submit-btn{
+    position: relative;
+    left: -5rem;
+    width: 3.5rem;
+    height: 3.7rem;
+    background-color: #000;
+    color: rgba(255, 69, 2, 0.932);
+    border: none;
+}
+
+/** end of section 4**/
