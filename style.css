@@ -129,17 +129,29 @@ html{
 .food-img{
     width: 25vw;
     height: 15vw;
-    
+    box-shadow: .3rem .3rem .1rem rgba(255, 69, 2, 0.932), 
+    .5rem .5rem .1rem white,
+    .6rem .6rem .1rem rgba(0, 0, 255, .8),
+    .8rem .8rem .1rem  rgba(255, 69, 2, 0.932);
+    transition: all .8s .3s;
+}
+.menu-card:hover .food-img{
+    opacity: .3;
+    filter: blur(.5rem);
+    box-shadow: .8rem .8rem .1rem rgba(255, 69, 2, 0.932), 
+    1.5rem 1.5rem .1rem white,
+    2rem 2rem .1rem rgba(0, 0, 255, .8),
+    2.5rem 2.5rem .1rem  rgba(255, 69, 2, 0.932);
+    transition: all .5s;
+    transform: scale(1.02);
 
 }
 .menu-card{
     position: relative;
     margin: 4rem;
-    box-shadow: .3rem .3rem .1rem rgba(255, 69, 2, 0.932), 
-    .5rem .5rem .1rem white,
-    .6rem .6rem .1rem rgba(0, 0, 255, .8),
-    .8rem .8rem .1rem  rgba(255, 69, 2, 0.932);
+    
 }
+    
 .food-item{
     position: absolute;
     top:2rem;
@@ -151,6 +163,7 @@ html{
     overflow: hidden;
     width: 0;
     transition: width 1s;
+    z-index: 10;
 }
 .menu-card:hover .food-item{
     width: 100%;
@@ -165,6 +178,7 @@ html{
     width: 70%;
     visibility: hidden;
     opacity: 0;
+    letter-spacing: .1rem;
     transition: all 1s 0.2s;
 }
 .menu-card:hover .food-des{
@@ -181,6 +195,7 @@ html{
     left: 80%;
     top: 2vw;
     transition: height 1s;
+    z-index: 20;
 }
 .menu-card:hover::before{
   height: 80%;
