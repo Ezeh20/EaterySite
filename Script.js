@@ -19,7 +19,7 @@ setInterval(()=>{
 
 
 menu.addEventListener('click', ()=>{
-   press.forEach((target)=>{
+     press.forEach((target)=>{
     target.classList.toggle('target')
    })
 })
