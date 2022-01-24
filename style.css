@@ -21,12 +21,11 @@
 }
 html{
     font-size: 65%;
-}
-body{
-    width: 100%;
-    height: 100%;
     margin: 0px;
     padding: 0px;
+    overflow-x: hidden;
+}
+body{
     overflow-x: hidden;
 }
 /**end of common style**/
@@ -375,3 +374,58 @@ letter-spacing: .2rem;
         height: 100%;
     }
 }
+@media (max-width:800px){
+    .section-heading{
+        font-size: 7rem;
+    }
+    .section-1-icons i{
+        font-size: 18rem;
+    }
+    .menu-card{
+        width: 30rem;
+        height: auto;
+    }
+    .food-item{
+        font-size: 2rem;
+    }
+    .food-des{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width:720px){
+    html{
+      font-size: 45%;
+    }
+    .nav-item{
+        margin: 4rem;
+    }
+    .ic{
+        font-size: 2rem;
+    }
+}
+@media (max-width:600px){
+    nav  span.nav-name{
+        font-size: 1.5rem;
+    }
+    nav i.ic{
+        font-size: 3rem;
+    }
+    .nav-item{
+        margin: 3rem;
+    }
+    .section-4{
+        height: 50rem;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+    .upper{
+        align-items: center;
+        align-content: center;
+        padding-left: 8rem;
+    }
+    .footer-form{
+        padding-bottom: 15rem;
+    }
+}
+
