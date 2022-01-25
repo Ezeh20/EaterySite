@@ -407,6 +407,12 @@ letter-spacing: .2rem;
     nav  span.nav-name{
         font-size: 1.5rem;
     }
+    .menu{
+        left: 2rem;
+    }
+    .section-heading{
+        font-size: 6rem;
+    }
     nav i.ic{
         font-size: 3rem;
     }
@@ -428,4 +434,29 @@ letter-spacing: .2rem;
         padding-bottom: 15rem;
     }
 }
-
+@media (max-width:480px){
+    nav i.ic{
+        font-size: 3rem;
+    }
+    .cards{
+        width: 27rem;
+        height: auto;
+    }
+    nav span.nav-name{
+        font-size: 1.3rem;
+    }
+    .nav-item{
+        margin: 2rem;
+    }
+}
+@media (max-width:360px){
+    .nav-item{
+        margin: 1.9rem;
+    }
+    .menu{
+        left: 2rem;
+    }
+    .section-heading{
+        font-size: 3rem;
+    }
+}
