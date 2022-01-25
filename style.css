@@ -382,7 +382,7 @@ letter-spacing: .2rem;
         font-size: 18rem;
     }
     .menu-card{
-        width: 30rem;
+        width: 33rem;
         height: auto;
     }
     .food-item{
@@ -448,6 +448,9 @@ letter-spacing: .2rem;
     .nav-item{
         margin: 2rem;
     }
+    .section-heading{
+        font-size: 5rem;
+    }
 }
 @media (max-width:360px){
     .nav-item{
@@ -458,5 +461,19 @@ letter-spacing: .2rem;
     }
     .section-heading{
         font-size: 3rem;
+    }
+}
+@media (orientation: landscape) and (max-width :1200px){
+    html{
+        font-size: 40%;
+    }
+    .section-heading{
+        font-size: 7rem;
+    }
+    .section-1-icons i{
+        font-size: 18rem;
+    }
+    .section-1{
+        padding-top: 10rem;
     }
 }
